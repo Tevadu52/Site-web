@@ -1,0 +1,26 @@
+ul{
+    display: flex;
+}
+
+.tab{
+    font-size: larger;
+    padding: 1%;
+    width: 50%;
+    text-align: center;
+    border: 2px solid black;
+    background-color: darkgreen;
+    list-style: none;
+    cursor: pointer;
+}
+
+.tab-active{
+    background-color:darkolivegreen;
+}
+
+.content{
+    display: none;
+}
+
+.content.active{
+    display: block;
+}

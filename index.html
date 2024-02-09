@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-form.css" />
+    <title>Wiki: Time to escape</title>
+  </head>
+  <body>
+    <img src="images/menu.png" alt="" class="burger">
+    <header>Wiki: Time to escape</header>
+    <h1>Accueil</h1>
+    <nav>
+      <div class="link">
+        <a class="lien" href="Personnage.html">Personnages</a>
+        <a class="lien" href="Histoire.html">Histoire</a>
+      </div>
+    </nav>
+    <main>
+          <img src="images/kingdom.png" alt="kingdom" />
+      <section class="presentation">
+        <aside>
+          <div>
+            A l’époque médiévale, nombre de personnes furent emprisonnées, et
+            qu’ils soient coupables ou non, tous attendent l’opportunité pour
+            s’enfuir.
+          </div>
+          <div>
+            Vous incarnez James un ancien aventurier condamné à perpétuité pour
+            une raison que l’on taira.
+          </div>
+          <div>
+            Vous êtes prisonnier dans les oubliettes du royaume de Mornthar, et
+            durant votre emprisonnement le royaume est envahi par des Orcs,
+            votre famille n’est plus en sécurité.
+          </div>
+          <div>
+            Avec le chaos ambiant, c’est le moment opportun de sortir de
+            cellule...
+          </div>
+        </aside>
+      </section>
+      <section class="presentation">
+        <article class="un center">
+          <div>Code</div>
+        </article>
+        <article class="deux center">
+          <div>Konami</div>
+        </article>
+        <article class="trois center">
+          <div>->-><-/\\/LRR/\</div>
+        </article>
+      </section>
+      <div class="message-error">
+          <ul></ul>
+      </div>
+      <div class="message-success">
+          Formulaire envoyé avec succès !
+      </div>
+      <form action="" method="post" enctype="multipart/form-data">
+          <div>
+              <label for="pseudo">Pseudo :</label>
+              <input type="text" name="pseudo" id="pseudo">
+          </div>
+          
+          <div>
+              <label for="email">Email :</label>
+              <input type="email" name="email" id="email">
+          </div>
+  
+          <div>
+              <label for="password">Mot de passe :</label>
+              <input type="password" name="password" id="password">
+          </div>
+  
+          <div>
+              <label for="password2"> Confirmer :</label>
+              <input type="password" name="password2" id="password2">
+          </div>
+          <div>
+            <label for="formule">Formule :</label>
+            <select name="formule" id="formule">
+              <option value="" selected hidden></option>
+              <option value="Premium">Premium</option>
+              <option value="Standard">Standard</option>
+              <option value="Free">Free</option>
+            </select>
+        </div>
+        <div>
+          <label for="new">Voulez-vous recevoir toutes les news !</label>
+          <p>Oui</p>
+          <input type="radio" name="new" id="new" checked>
+          <p>Non</p>
+          <input type="radio" name="new" id="new">
+        </div>
+          <div><button type="submit">S'inscrire</button></div>
+      </form>
+      <p class="mode">Changer de mode : darkmode/lightmode</p>
+    </main>
+    <footer>Téva fougères</footer>
+    <script src="/js/main-form.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

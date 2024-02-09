@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'Pixelity Sans';
+    src: url('../fonts/PixelifySans-Regular.ttf');
+}
+
+/* Reset Css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: xx-large;
+    color: black;
+}
+
+*.dark{
+    color: white;
+}
+
+body{
+    background-color:darkcyan;
+    font-family: 'Pixelity Sans';
+}
+
+body.dark{
+    background-color: darkslateblue;
+}
+
+header{
+    background-color: rgb(37, 162, 28);
+    font-family: 'Pixelity Sans';
+    font-size: xx-large;
+    padding: 10px;
+    border: 4px dashed black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+header.dark{
+    background-color: rgb(18, 82, 13);
+}
+
+h1{
+    background-color: yellowgreen;
+    border: 4px dashed black;
+    font-family: 'Pixelity Sans';
+    font-size: xx-large;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+h1.dark{
+    background-color: darkolivegreen;
+}
+
+aside{
+    background-color: aquamarine;
+}
+
+aside.dark{
+    background-color: darkslateblue;
+}
+
+div.link{
+    display: flex;
+}
+
+a.lien{
+    font-size: larger;
+    padding: 1%;
+    width: 50%;
+    text-align: center;
+    background-color: yellowgreen;
+    border: 2px solid black;
+}
+
+a.lien.dark{
+    background-color: darkolivegreen;
+}
+
+a.lien:hover{
+    background-color: greenyellow;
+    color: brown;
+    cursor: pointer;
+}
+
+a.lien:hover.dark{
+    background-color: rgb(94, 125, 31);
+    color: darkred;
+    cursor: pointer;
+}
+
+.un{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 30%;
+}
+.deux{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 70%;
+}
+.trois{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 180%;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+}
+
+div{
+    width: 100%;
+    text-align: center;
+}
+
+article{
+    width: 30%;
+    border-top: 2px solid;
+    border-bottom: 5px solid;
+    border-left: 2px solid;
+    border-right: 5px solid;
+    border-radius: 10px;
+    border-color: black;
+    background-color:white;
+}
+
+article.dark{
+    border-color: white;
+    background-color: black;
+}
+
+section{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+img{
+    width: 100%;
+    height: fit-content;
+}
+
+img.burger{
+    width: 50px;
+    height: fit-content;
+    position: absolute;
+    margin: 8px;
+    display: none;
+    cursor: pointer;
+}
+
+footer{
+    background-color:cornflowerblue;
+    padding: 2%;
+}
+
+footer.dark{
+    background-color: darkblue;
+}
+
+.presentation{
+    display: flex;
+}
+
+.mode{
+    text-align: center;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width : 800px){
+    *{
+        font-size: medium;
+    }
+
+    img.personnage{
+        width: 50%;
+    }
+
+    .presentation{
+        display: inline;
+    }
+    
+    .un{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        width: 100%;
+    }
+    .deux{
+        padding: 1%;
+        width: 100%;
+    }
+    .trois{
+        width: 100%;
+    }
+    
+    div.link{
+        display: none;
+    }
+
+    div.link.visible{
+        display: block;
+    }
+    
+    a.lien{
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    img.burger{
+        display: block;
+    }
+}
