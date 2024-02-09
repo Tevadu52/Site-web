@@ -14,7 +14,7 @@ label{
 }
 
 input{
-    height: 20px;
+    height: auto;
     width: 40%;
 }
 
@@ -23,7 +23,7 @@ input.dark{
 }
 
 select{
-    height: 20px;
+    height: auto;
     width: 40%;
 }
 
