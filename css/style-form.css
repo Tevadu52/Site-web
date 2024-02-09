@@ -1,5 +1,5 @@
 form{
-    border: 1px solid rgba(153, 153, 153, 0.6);
+    border: 1px solid rgba(153, 153, 153);
     background-color: green;
 }
 
@@ -18,9 +18,17 @@ input{
     width: 40%;
 }
 
+input.dark{
+    background-color: black;
+}
+
 select{
     height: 20px;
     width: 40%;
+}
+
+select.dark{
+    background-color: black;
 }
 
 button{
@@ -31,15 +39,19 @@ button{
     cursor: pointer;
 }
 
+button.dark{
+    background-color: black;
+}
+
 .message-error{
     border: 1px solid rgb(212, 42, 0);
-    color:  rgb(212, 42, 0);
-    background-color: rgb(212, 42, 0, 0.4);
+    background-color: rgb(149, 30, 0);
     padding: 16px 32px;
     margin-top: 8px;
     margin-bottom: 20px;
     display: none;
 }
+
 .message-error.visible{
     display: block;
 }
@@ -47,7 +59,7 @@ button{
 .message-success{
     border: 1px solid rgb(81, 150, 2);
     color:  rgb(51, 95, 0);
-    background-color: rgb(113, 212, 0, 0.4);
+    background-color: rgb(113, 212, 0);
     padding: 16px 32px;
     margin-bottom: 20px;
     display: none;
@@ -60,5 +72,10 @@ button{
 
 .success{
     border: 1px solid rgb(81, 150, 2);
-    background-color: rgba(81, 150, 0, 0.4);
+    background-color: rgba(81, 150, 0);
+}
+
+.success.dark{
+    border: 1px solid rgb(55, 102, 0);
+    background-color: rgb(62, 117, 0);
 }
